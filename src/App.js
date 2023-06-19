@@ -3,7 +3,7 @@ import Statistics from './components/Statistics/statistics';
 import FriendsList from './components/FriendList/friendList';
 import Transactions from './components/TransactionHistory/Transactions';
 
-import './App.css';
+
 import user from './components/Profile/user.json'
 import data from './components/Statistics/data.json';
 import friends from './components/FriendList/friends.json';
@@ -11,7 +11,7 @@ import transactions from './components/TransactionHistory/transactions.json';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Profile 
         username={user.username} 
         tag={user.tag} 
@@ -32,7 +32,7 @@ function App() {
       <Transactions 
         items={transactions}
       />
-    </div>
+    </>
   );
 }
 
